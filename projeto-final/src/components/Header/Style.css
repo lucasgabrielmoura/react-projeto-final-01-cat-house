@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#header {
+    width: 100%;
+    background-color: #ffde59;
+    height: 13vh;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.616);
+}
+
+.logo {
+    width: 105px;
+    height: 105px;
+}
