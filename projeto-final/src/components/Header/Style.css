@@ -8,11 +8,11 @@
     position: fixed;
     background-color: #ffde59;
     z-index: 1;
-    height: 13vh;
+    height: 12vh;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.616);
 }
 
 .logo {
     width: 105px;
-    height: 105px;
+    height: 100px;
 }
