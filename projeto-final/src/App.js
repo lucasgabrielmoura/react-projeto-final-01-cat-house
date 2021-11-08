@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Galeria from "./components/galeria/Galeria";
 import {Switch, Route} from 'react-router-dom'
 import Sobre from "./components/sobre/Sobre";
+import Home from "./components/Home/Home";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   const [dados, setDados] = useState({
@@ -12,9 +14,9 @@ export default function App() {
   return (
         <>
           <Switch>
-            <Route exact path='/galeria' render={(props) => <Galeria setDados={setDados} />}/>
+              <Route path="/Home" component={Home} exact/>
           </Switch>
-          <Sobre/>
+
         </>
   );
 }
