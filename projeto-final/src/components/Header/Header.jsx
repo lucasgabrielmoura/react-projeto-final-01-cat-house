@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <>
             <header id ="header">
-                <ul>
+                <ul className="ul-logo">
                    <img className="logo" src={Logo} alt="Logo-CatHouse" />
                 </ul>
             </header>
