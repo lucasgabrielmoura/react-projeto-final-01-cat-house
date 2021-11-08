@@ -1,16 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import "./Galeria.css"
 import Imageapi from '../../services/Imageapi'
+import arrow from './img/arrow-down.svg'
+import {Link} from 'react-router-dom'
 
 /*https://api.thecatapi.com/v1/images/search?format=json&limit=25*/
 
-export default function Galeria(props) {
+export default function Galeria({setDados}) {
 
     const [imagens, setImagem] = useState([]);
 
+
+    function puxarDado(imagem){
+      setDados({
+          url:imagem
+      })  
+      console.log(imagem)
+    }
+
     useEffect(() => {
         Imageapi
-            .get('?format=json&limit=25')
+            .get(`?mime_types=jpg&size=full&has_breeds=1&limit=25`)
             .then((res) => {
                 console.log(res.data)
                 setImagem(res.data)
@@ -21,9 +31,9 @@ export default function Galeria(props) {
 
     const imagensLista = imagens.map(imagem => (
     <div key={imagem.id} className="caixa-img">
-        <img className="gato" alt="gato" src={imagem.url} />
+        <img id="url-image" className="gato" alt="gato" src={imagem.url} />
         <div className="caixinha" id="caixinha-puxar">
-            <a href="https://www.youtube.com/watch?v=HN1UjzRSdBk&ab_channel=Rocketseat" ><button className="botao-escolher">ADOTAR</button></a>
+            <button onClick={() => puxarDado(imagem.url)} className="botao-escolher">ADOTAR</button>
         </div>
     </div>
     ))
@@ -31,7 +41,8 @@ export default function Galeria(props) {
     return (
         <>
             <article className="guia">
-                <h3>Clique no gatinho que você está mais afim de adotar!!</h3>
+                <h3>Escolha o gatinho que você quer adotar!!!</h3>
+                <img className="flecha-guia" src={arrow} alt="flecha-circular-baixo"/>
             </article>
             <div className="images">
                 {imagensLista}

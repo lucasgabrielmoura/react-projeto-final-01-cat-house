@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;;
+}
+.tela-principal{
+    position: absolute;
+    transform: scale(0.1);
+    opacity: 0.5;
+    transition: 1s;
+}
+.tela-principal.hide{
+    transform: scale(1);
+    transition: 1s;
+    opacity: 1;
+}
+
+.sobre{
+    margin-top: 5vh;
+    height: 85vh;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.perfil-id{
+    padding: 3vw 3vh;
+    margin: 1vh;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+article.img-box{
+    display: flex;
+    justify-content: center;
+}
+
+img.profile{
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+article.name{
+    text-align: center;
+}
+@media screen {
+    
+}
