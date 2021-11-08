@@ -8,17 +8,10 @@ import Gato5 from "../Home/Img/Gato5.png";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-import Carousel from 'react-bootstrap/Carousel';
 
 
 
 export default function Home() {
-
-    useEffect(()=>{
-        document.getElementsByTagName("a")[0].style.display = "none";
-        document.getElementsByTagName("a")[1].style.display = "none";
-    }, [{Carousel}]);
-
     return(
         <>
             <Header />
@@ -34,43 +27,6 @@ export default function Home() {
                     </div>
                 </div>
                 <div id="imagem">
-                <Carousel variant="dark" interval="4000">
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Gato}
-                        alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Gato2}
-                        alt="Third slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Gato3}
-                        alt="Third slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Gato4}
-                        alt="Third slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Gato5}
-                        alt="Third slide"
-                        />
-                    </Carousel.Item>
-                </Carousel>
                 </div>
             </div>
             <Footer />

@@ -40,7 +40,7 @@ export default function Sobre(){
                                 <article className="name">
                                     <h2>Henrique Fernandes </h2>
                                     <p>Front-end Developer</p>
-                                    <p>lucasgabrieldemoura9199@gmail.com</p>
+                                    <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
                                     <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Linkedin</a></p>
                                     <p className="skill"><a href="https://github.com/henriferi" target="_blank" rel="noreferrer">Github</a></p>
                                 </article>

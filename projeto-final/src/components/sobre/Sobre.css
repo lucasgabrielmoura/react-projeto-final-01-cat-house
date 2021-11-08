@@ -3,11 +3,10 @@
     --blue: #199ef6;
     --amarelo: #ffde59;
 }
-*{
-    font-family: 'Open Sans', sans-serif;;
-}
+
 .tela-principal{
     position: absolute;
+    width: 100%;
     z-index: 1;
     opacity: 0.5;
     transition: 1s;
@@ -18,9 +17,11 @@
 }
 .tela-sobre::-webkit-scrollbar {
     display: none;
-  }
+}
+.tela-sobre{
+    width: 100%;
+}
 .sobre{
-    margin-top: 5vh;
     height: 96vh;
     width: 100%;
     display: flex;
@@ -30,9 +31,9 @@
     justify-content: center;
 }
 section.perfil-id{
-    margin: 1vw 5vw;
+    margin: 1vw 2vw;
     width: 20vw;
-    height: 100vh;
+    height: 80vh;
     background-color: var(--blue);
     color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -47,6 +48,7 @@ article.img-box{
 
 img.profile{
     width: 100%;
+    border-radius: 10px 10px 0 0;
     margin: 0 auto;
 }
 article.name{

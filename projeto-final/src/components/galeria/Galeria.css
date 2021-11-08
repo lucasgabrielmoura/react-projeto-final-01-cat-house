@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-*{
-    font-family: 'Open Sans', sans-serif;;
-}
 :root{
     --cinza: #E8EDED;
     --amarelo: #ffde59;
@@ -10,9 +7,6 @@
 }
 body{
     background-color: var(--cinza);
-}
-div.caixa-p{
-    position: absolute;
 }
 article.guia{
     box-sizing: border-box;

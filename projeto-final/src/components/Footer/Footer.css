@@ -1,9 +1,13 @@
+body{
+    margin: 0;
+}
 #rodape {
     width: 100%;
-    position: absolute;
     bottom: 0;
     height: 7vh;
     background-color: #199ef6;
+    position: fixed;
+    bottom: 0;
 }
 
 #rodape p {
