@@ -17,7 +17,6 @@ export default function App() {
               <Route path="/Home" component={Home} exact/>
               <Route path="/Galeria" render={(props) => <Galeria setDados={setDados}/>} />
           </Switch>
-          <Sobre/>
         </>
   );
 }

@@ -1,8 +1,13 @@
-
+.ul-logo {
+    margin: 0;
+    text-align: center;
+}
 
 #header {
     width: 100%;
+    position: fixed;
     background-color: #ffde59;
+    z-index: 1;
     height: 13vh;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.616);
 }
