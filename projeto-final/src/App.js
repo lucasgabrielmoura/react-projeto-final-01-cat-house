@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Galeria from "./components/galeria/Galeria";
-import Sobre from "./components/sobre/Sobre";
 import {Switch, Route} from 'react-router-dom'
+import Sobre from "./components/sobre/Sobre";
 
 export default function App() {
   const [dados, setDados] = useState({

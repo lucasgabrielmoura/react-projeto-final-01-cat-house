@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root{
+    --blue: #199ef6;
+    --amarelo: #ffde59;
+}
 *{
     font-family: 'Open Sans', sans-serif;;
 }
 .tela-principal{
     position: absolute;
-    transform: scale(0.1);
+    z-index: 1;
     opacity: 0.5;
     transition: 1s;
 }
 .tela-principal.hide{
-    transform: scale(1);
     transition: 1s;
     opacity: 1;
 }
-
+.tela-sobre::-webkit-scrollbar {
+    display: none;
+  }
 .sobre{
     margin-top: 5vh;
-    height: 85vh;
-    width: 99vw;
+    height: 96vh;
+    width: 100%;
     display: flex;
     align-items: center;
     overflow-x: hidden;
@@ -25,10 +30,15 @@
     justify-content: center;
 }
 section.perfil-id{
-    padding: 3vw 3vh;
-    margin: 1vh;
-    background-color: blue;
+    margin: 1vw 5vw;
+    width: 20vw;
+    height: 100vh;
+    background-color: var(--blue);
     color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.perfil-id a{
+    color: var(--amarelo);
 }
 article.img-box{
     display: flex;
@@ -36,13 +46,14 @@ article.img-box{
 }
 
 img.profile{
-    width: 150px;
-    border-radius: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 article.name{
     text-align: center;
 }
-@media screen {
-    
+@media (min-width: 2560px) {
+    body{
+        background-color: black;
+    }
 }

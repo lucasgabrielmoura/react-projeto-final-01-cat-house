@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Galeria.css"
 import Imageapi from '../../services/Imageapi'
 import arrow from './img/arrow-down.svg'
+import Sobre from "../sobre/Sobre";
 import {Link} from 'react-router-dom'
 
 /*https://api.thecatapi.com/v1/images/search?format=json&limit=25*/
@@ -40,13 +41,15 @@ export default function Galeria({setDados}) {
 
     return (
         <>
-            <article className="guia">
-                <h3>Escolha o gatinho que você quer adotar!!!</h3>
-                <img className="flecha-guia" src={arrow} alt="flecha-circular-baixo"/>
-            </article>
-            <div className="images">
-                {imagensLista}
-            </div>  
+            <div className="caixa-p">
+                <article className="guia">
+                    <h3>Escolha o gatinho que você quer adotar!!!</h3>
+                    <img className="flecha-guia" src={arrow} alt="flecha-circular-baixo" />
+                </article>
+                <div className="images">
+                    {imagensLista}
+                </div>
+            </div>
         </>
     );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import './Sobre.css'
 
 export default function Sobre(){
-    let check = false
+    let check = true
     function voltar(){
         check = !check
         if(check === true){
@@ -14,7 +14,7 @@ export default function Sobre(){
 
     return(
         <>
-            <div className="tela-principal">
+            <div className="tela-principal hide">
                 <div className="tela-sobre">
                     <button onClick={voltar} className="btn" id="voltar">🡠 Voltar</button>
                     <div className="sobre">

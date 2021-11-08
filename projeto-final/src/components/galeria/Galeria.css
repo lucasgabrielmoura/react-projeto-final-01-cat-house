@@ -11,6 +11,9 @@
 body{
     background-color: var(--cinza);
 }
+div.caixa-p{
+    position: absolute;
+}
 article.guia{
     box-sizing: border-box;
     font-size: 1.5vw;
