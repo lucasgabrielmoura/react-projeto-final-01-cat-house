@@ -23,9 +23,18 @@ export default function Sobre(props){
                                 <article className="name">
                                     <h2>Lucas Gabriel</h2>
                                     <p>Front-end Developer</p>
-                                    <p className="skill"><img className="icons" src={email} alt="email-icon"/><a href="mailto:lucasgabrieldemoura.2021@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
-                                    <p className="skill"><img className="icons" src={linkedin} alt="email-icon"/><a href="https://www.linkedin.com/in/lucas-gabriel-baa800212/" target="_blank" rel="noreferrer">Linkedin</a></p>
-                                    <p className="skill"><img className="icons" src={github} alt="email-icon"/><a href="https://github.com/lucasgabrielmoura" target="_blank" rel="noreferrer">Github</a></p>
+                                    <div className="caixa-status">
+                                        <div className="caixa-icons">
+                                            <img className="icons" src={email} alt="email-icon"/>
+                                            <img className="icons" src={linkedin} alt="email-icon"/>
+                                            <img className="icons" src={github} alt="email-icon"/>
+                                        </div>
+                                        <div className="caixa-redes">
+                                            <p className="skill"><a href="mailto:lucasgabrieldemoura.2021@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
+                                            <p className="skill"><a href="https://www.linkedin.com/in/lucas-gabriel-baa800212/" target="_blank" rel="noreferrer">Linkedin</a></p>
+                                            <p className="skill"><a href="https://github.com/lucasgabrielmoura" target="_blank" rel="noreferrer">Github</a></p>
+                                        </div>
+                                    </div>
                                 </article>
                             </section>
                         </article>
@@ -37,9 +46,18 @@ export default function Sobre(props){
                                 <article className="name">
                                     <h2>Henrique Fernandes </h2>
                                     <p>Front-end Developer</p>
-                                    <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
-                                    <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Linkedin</a></p>
-                                    <p className="skill"><a href="https://github.com/henriferi" target="_blank" rel="noreferrer">Github</a></p>
+                                    <div className="caixa-status">
+                                        <div className="caixa-icons">
+                                            <img className="icons" src={email} alt="email-icon" />
+                                            <img className="icons" src={linkedin} alt="email-icon" />
+                                            <img className="icons" src={github} alt="email-icon" />
+                                        </div>
+                                        <div className="caixa-redes">
+                                            <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
+                                            <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Linkedin</a></p>
+                                            <p className="skill"><a href="https://github.com/henriferi" target="_blank" rel="noreferrer">Github</a></p>
+                                        </div>
+                                    </div>
                                 </article>
                             </section>
                         </article>
@@ -51,9 +69,18 @@ export default function Sobre(props){
                                 <article className="name">
                                     <h2>Anderson Figueiredo</h2>
                                     <p>Front-end Developer</p>
-                                    <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
-                                    <p className="skill"><a href="https://www.linkedin.com/in/anderson-figueiredo-8bb034218/" target="_blank" rel="noreferrer">Linkedin</a></p>
-                                    <p className="skill"><a href="https://github.com/AndyVF" target="_blank" rel="noreferrer">Github</a></p>
+                                    <div className="caixa-status">
+                                        <div className="caixa-icons">
+                                            <img className="icons" src={email} alt="email-icon" />
+                                            <img className="icons" src={linkedin} alt="email-icon" />
+                                            <img className="icons" src={github} alt="email-icon" />
+                                        </div>
+                                        <div className="caixa-redes">
+                                            <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
+                                            <p className="skill"><a href="https://www.linkedin.com/in/anderson-figueiredo-8bb034218/" target="_blank" rel="noreferrer">Linkedin</a></p>
+                                            <p className="skill"><a href="https://github.com/AndyVF" target="_blank" rel="noreferrer">Github</a></p>
+                                        </div>
+                                    </div>
                                 </article>
                             </section>
                         </article>
@@ -65,9 +92,18 @@ export default function Sobre(props){
                                 <article className="name">
                                     <h2>Pedro Gabriel</h2>
                                     <p>Front-end Developer</p>
-                                    <p className="skill"><a href="mailto:Pedrogabriel4545@hotmail.com" target="_blank" rel="noreferrer">Email</a></p>
-                                    <p className="skill"><a href="https://www.linkedin.com/in/pedro-gabriel-98b14021b/" target="_blank" rel="noreferrer">Linkedin</a></p>
-                                    <p className="skill"><a href="https://github.com/PedroGabrielll" target="_blank" rel="noreferrer">Github</a></p>
+                                    <div className="caixa-status">
+                                        <div className="caixa-icons">
+                                            <img className="icons" src={email} alt="email-icon" />
+                                            <img className="icons" src={linkedin} alt="email-icon" />
+                                            <img className="icons" src={github} alt="email-icon" />
+                                        </div>
+                                        <div className="caixa-redes">
+                                            <p className="skill"><a href="mailto:Pedrogabriel4545@hotmail.com" target="_blank" rel="noreferrer">Email</a></p>
+                                            <p className="skill"><a href="https://www.linkedin.com/in/pedro-gabriel-98b14021b/" target="_blank" rel="noreferrer">Linkedin</a></p>
+                                            <p className="skill"><a href="https://github.com/PedroGabrielll" target="_blank" rel="noreferrer">Github</a></p>
+                                        </div>
+                                    </div>
                                 </article>
                             </section>
                         </article>
