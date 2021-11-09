@@ -1,18 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-*{
-    font-family: 'Open Sans', sans-serif;;
-}
 :root{
     --cinza: #E8EDED;
     --amarelo: #ffde59;
     --amarelo-b: rgba(255, 222, 89, 0.7);
     --azul: #199ef6;
 }
+div.caixa-espaço{
+    height: 15vh;
+}
 body{
     background-color: var(--cinza);
 }
+article.guia{
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--azul);
+}
+img.flecha-guia{
+    width: 3vw;
+    animation: infinite desce-sobe 1s;
+    position: absolute;
+    z-index: 1;
+}
+@keyframes desce-sobe {
+    0%{
+        margin-top: 6vw;
+        opacity: 0.7;
+    }
+    50%{
+        margin-top: 7vw;
+        opacity: 1;
+    }
+    100%{
+        margin-top: 6vw;
+        opacity: 0.7;
+    }
+}
+
 div.images{
-    margin-top: 10vh;
+    margin-top: 13vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,8 +52,10 @@ div.images{
 div.caixa-img{
     width: 30%;
     height: 50vh;
-    transition: 0.5s;
+    border-radius: 10px;
     border: solid var(--amarelo);
+    transition: 0.5s;
+    overflow-y: hidden;
 }
 img.gato{
     width: 100%;
@@ -44,8 +75,9 @@ div.caixa-img:hover .caixinha{
 .caixinha{
     background-color: var(--amarelo-b);
     position: relative;
+    z-index: 2;
     opacity: 0;
-    transition: 0.1s;
+    transition: 0.5s;
     width: 100%;
     height: 50%;
     display: flex;
@@ -59,7 +91,7 @@ button.botao-escolher{
     color: var(--azul);
     width: 100px;
     height: 40px;
-    border: 2px solid var(--azul);
+    border: 0.15em solid var(--azul);
     font-weight: bold;
     border-radius: 20px;
     font-size: 15px;
@@ -68,15 +100,35 @@ button.botao-escolher{
     cursor: pointer;
 }
 button.botao-escolher:hover{
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: var(--azul);
+    background-position: 100px;
     color: var(--cinza);
-    border: var(--cinza);
 }
 @media (max-width:768px) {
+    article.guia{
+        font-size: 3vw;
+    }
+    img.flecha-guia{
+        width: 5vw;
+    }
+    @keyframes desce-sobe {
+        0%{
+            margin-top: 13vw;
+            opacity: 0.7;
+        }
+        50%{
+            margin-top: 15vw;
+            opacity: 1;
+        }
+        100%{
+            margin-top: 13vw;
+            opacity: 0.7;
+        }
+    }
     div.caixa-img{
         width: 70%;
-        height: 70vh;
+        height: 80vh;
     }
     div.caixa-img:hover .caixinha{
         transform: translateY(-20vw);;
@@ -87,13 +139,33 @@ button.botao-escolher:hover{
 }
 
 @media (max-width:425px) {
+    article.guia{
+        font-size: 5vw;
+    }
+    img.flecha-guia{
+        width: 10vw;
+    }
+    @keyframes desce-sobe {
+        0%{
+            margin-top: 25vw;
+            opacity: 0.7;
+        }
+        50%{
+            margin-top: 30vw;
+            opacity: 1;
+        }
+        100%{
+            margin-top: 25vw;
+            opacity: 0.7;
+        }
+    }
     div.images{
         flex-direction: column;
         overflow: hidden;
     }
     div.caixa-img{
         width: 95%;
-        height: 70vh;
+        height: 60vh;
     }
     div.caixa-img:hover{
         transform: scale(1.05);
