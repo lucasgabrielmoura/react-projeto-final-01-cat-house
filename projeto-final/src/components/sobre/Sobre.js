@@ -20,7 +20,7 @@ export default function Sobre(props){
                                 <article className="name">
                                     <h2>Lucas Gabriel</h2>
                                     <p>Front-end Developer</p>
-                                    <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
+                                    <p className="skill"><a href="mailto:lucasgabrieldemoura.2021@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
                                     <p className="skill"><a href="https://www.linkedin.com/in/lucas-gabriel-baa800212/" target="_blank" rel="noreferrer">Linkedin</a></p>
                                     <p className="skill"><a href="https://github.com/lucasgabrielmoura" target="_blank" rel="noreferrer">Github</a></p>
                                 </article>
@@ -62,7 +62,7 @@ export default function Sobre(props){
                                 <article className="name">
                                     <h2>Pedro Gabriel</h2>
                                     <p>Front-end Developer</p>
-                                    <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
+                                    <p className="skill"><a href="mailto:Pedrogabriel4545@hotmail.com" target="_blank" rel="noreferrer">Email</a></p>
                                     <p className="skill"><a href="https://www.linkedin.com/in/pedro-gabriel-98b14021b/" target="_blank" rel="noreferrer">Linkedin</a></p>
                                     <p className="skill"><a href="https://github.com/PedroGabrielll" target="_blank" rel="noreferrer">Github</a></p>
                                 </article>

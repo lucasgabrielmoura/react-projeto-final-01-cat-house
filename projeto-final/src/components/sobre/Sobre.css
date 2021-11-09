@@ -9,13 +9,13 @@
     width: 100%;
     z-index: 2;
     opacity: 1;
-    transition: 1s;
+    transition: 0.3s;
     visibility: visible;
     transform: scale(1);
 }
 .tela-principal.hide{
-    transition: 1s;
-    transform: scale(1);
+    transition: 0.3s;
+    transform: scale(0);
     opacity: 0;
     visibility: hidden;
 }
