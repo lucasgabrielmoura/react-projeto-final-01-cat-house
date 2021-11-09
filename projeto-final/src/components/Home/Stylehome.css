@@ -93,17 +93,16 @@ span {
     transition: all 0.5s;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) {    
+
+ 
     #imagem {
         display: none;
     }
 
-    #conteudo {
-        width: 100%;
-    }
-
     #texto {
         width: 85vw;
+        font-size: 12px;
     }
 
     #texto h1{
