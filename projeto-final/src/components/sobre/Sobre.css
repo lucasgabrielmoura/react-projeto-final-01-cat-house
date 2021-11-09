@@ -36,10 +36,17 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+img.icons{
+    width: 15px;
+}
+p.skill{
+    margin: 13px 0;
+}
 section.perfil-id{
     margin: 2vw 2vw;
     width: 270px;
     height: 500px;
+    box-sizing: border-box;
     background-color: var(--blue);
     color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -68,11 +75,12 @@ article.name{
     color: white;
     font-weight: 400;
     cursor: pointer;
-    height: 6vh;
-    width: 6vw;
+    width: 100px;
+    height: 30px;
     position: absolute;
-    margin: 7px; 
-    background: var(--blue)
+    margin: 1vh; 
+    background: var(--blue);
+    transition: 1s;
 }
 
 .btn:hover {
@@ -94,7 +102,4 @@ article.name{
 }
 
 @media (min-width: 2560px) {
-    body{
-        background-color: black;
-    }
 }

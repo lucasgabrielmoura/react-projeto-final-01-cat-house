@@ -13,7 +13,7 @@
 }
 
 #conteudo {
-    padding: 4.5em 3em;
+    padding: 3.5em 2em;
     width: 50%;
 }
 
@@ -93,13 +93,13 @@ span {
     transition: all 0.5s;
 }
 
-@media (max-width: 900px) {    
-
- 
+@media (max-width: 900px) {
+    #container {
+        align-items: center;
+    }
     #imagem {
         display: none;
     }
-
     #texto {
         width: 85vw;
         font-size: 12px;
@@ -129,5 +129,18 @@ span {
     .btn3 {
         padding: 10px;
         width: 35vw;
+    }
+}
+
+@media (max-height: 600px) {
+
+    #conteudo {
+        padding: 0 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #botoes {
+        margin: 0;
     }
 }

@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 #rodape {
-    width: 100vw;
+    width: 100%;
     bottom: 0;
     height: 7vh;
     background-color: #199ef6;
@@ -15,4 +15,14 @@ body{
     text-align: center;
     font-size: 0.8rem;
     color: white;
+}
+
+@media (max-height: 400px) {
+
+    #rodape {
+        height: 8vh;
+    }
+    #rodape p {
+        font-size: 10px;
+    }
 }
