@@ -36,11 +36,15 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+div.caixa-status{
+    display: flex;
+}
 img.icons{
-    width: 15px;
+    width: 20px;
+    margin: 0.3em 0.6em;
 }
 p.skill{
-    margin: 13px 0;
+    margin: 0.4em 1em;
 }
 section.perfil-id{
     margin: 2vw 2vw;
@@ -63,11 +67,21 @@ article.img-box{
 img.profile{
     width: 100%;
     border-radius: 10px 10px 0 0;
-    margin: 0 auto;
 }
 article.name{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+article.name h2{
+    margin: 0;
+    margin-top: 13px;
+}
+div.caixa-icons{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .btn {
     border: 0;
@@ -103,5 +117,51 @@ article.name{
     }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2000px) {
+    section.perfil-id{
+        margin: 2vw 2vw;
+        width: 500px;
+        height: 850px;
+        box-sizing: border-box;
+        background-color: var(--blue);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+    .btn {
+        border: 0;
+        border-radius: 15px;
+        color: white;
+        font-weight: 400;
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        margin: 1vh; 
+        background: var(--blue);
+        transition: 1s;
+    }
+    section.perfil-id h2{
+        font-size: 40px;
+    }
+    section.perfil-id p{
+        font-size: 25px;
+    }
+    section.perfil-id img.icons{
+        width: 35px;
+        margin: 0.45em 0.6em;
+    }
+    .btn {
+        border: 0;
+        border-radius: 35px;
+        color: white;
+        font-weight: 400;
+        cursor: pointer;
+        width: 300px;
+        height: 60px;
+        position: absolute;
+        margin: 1vh; 
+        background: var(--blue);
+        transition: 1s;
+        font-size: 25px;
+    }
 }
