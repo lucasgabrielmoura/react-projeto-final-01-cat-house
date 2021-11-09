@@ -1,5 +1,8 @@
 import React from "react";
 import './Sobre.css'
+import email from './img-sobre/at-sign.svg'
+import github from './img-sobre/github.svg'
+import linkedin from './img-sobre/linkedin.svg'
 
 export default function Sobre(props){
     function voltar(){
@@ -20,9 +23,9 @@ export default function Sobre(props){
                                 <article className="name">
                                     <h2>Lucas Gabriel</h2>
                                     <p>Front-end Developer</p>
-                                    <p className="skill"><a href="mailto:lucasgabrieldemoura.2021@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
-                                    <p className="skill"><a href="https://www.linkedin.com/in/lucas-gabriel-baa800212/" target="_blank" rel="noreferrer">Linkedin</a></p>
-                                    <p className="skill"><a href="https://github.com/lucasgabrielmoura" target="_blank" rel="noreferrer">Github</a></p>
+                                    <p className="skill"><img className="icons" src={email} alt="email-icon"/><a href="mailto:lucasgabrieldemoura.2021@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
+                                    <p className="skill"><img className="icons" src={linkedin} alt="email-icon"/><a href="https://www.linkedin.com/in/lucas-gabriel-baa800212/" target="_blank" rel="noreferrer">Linkedin</a></p>
+                                    <p className="skill"><img className="icons" src={github} alt="email-icon"/><a href="https://github.com/lucasgabrielmoura" target="_blank" rel="noreferrer">Github</a></p>
                                 </article>
                             </section>
                         </article>

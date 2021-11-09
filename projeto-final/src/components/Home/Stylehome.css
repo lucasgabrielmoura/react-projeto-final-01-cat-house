@@ -13,7 +13,7 @@
 }
 
 #conteudo {
-    padding: 4.5em 3em;
+    padding: 3.5em 2em;
     width: 50%;
 }
 
@@ -94,14 +94,12 @@ span {
 }
 
 @media (max-width: 900px) {
+    #container {
+        align-items: center;
+    }
     #imagem {
         display: none;
     }
-
-    #conteudo {
-        width: 100%;
-    }
-
     #texto {
         width: 85vw;
     }
