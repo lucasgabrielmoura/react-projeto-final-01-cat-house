@@ -30,9 +30,9 @@ export default function Sobre(props){
                                             <img className="icons" src={github} alt="email-icon"/>
                                         </div>
                                         <div className="caixa-redes">
-                                            <p className="skill"><a href="mailto:lucasgabrieldemoura.2021@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
-                                            <p className="skill"><a href="https://www.linkedin.com/in/lucas-gabriel-baa800212/" target="_blank" rel="noreferrer">Linkedin</a></p>
-                                            <p className="skill"><a href="https://github.com/lucasgabrielmoura" target="_blank" rel="noreferrer">Github</a></p>
+                                                <p className="skill"><a href="mailto:lucasgabrieldemoura.2021@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
+                                                <p className="skill"><a href="https://www.linkedin.com/in/lucas-gabriel-baa800212/" target="_blank" rel="noreferrer">Linkedin</a></p>
+                                                <p className="skill"><a href="https://github.com/lucasgabrielmoura" target="_blank" rel="noreferrer">Github</a></p>   
                                         </div>
                                     </div>
                                 </article>
