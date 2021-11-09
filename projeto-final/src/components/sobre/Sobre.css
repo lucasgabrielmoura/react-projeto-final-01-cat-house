@@ -92,6 +92,8 @@ article.name{
     box-shadow: 0 0 50px 20px #199ef6b7;
 }
 
+
+
 @keyframes botao {
     0% {
         transform: scale(1);
