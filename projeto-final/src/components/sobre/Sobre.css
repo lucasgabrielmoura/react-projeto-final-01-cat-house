@@ -37,13 +37,14 @@
     justify-content: center;
 }
 section.perfil-id{
-    margin: 1vw 2vw;
+    margin: 2vw 2vw;
     width: 270px;
     height: 500px;
     background-color: var(--blue);
     color: rgb(255, 255, 255);
     border-radius: 10px;
 }
+
 .perfil-id a{
     color: var(--amarelo);
 }
@@ -60,6 +61,38 @@ img.profile{
 article.name{
     text-align: center;
 }
+
+.btn {
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    height: 6vh;
+    width: 6vw;
+    position: absolute;
+    margin: 7px; 
+    background: var(--blue)
+}
+
+.btn:hover {
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 50px 20px #199ef6b7;
+}
+
+@keyframes botao {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
 @media (min-width: 2560px) {
     body{
         background-color: black;
