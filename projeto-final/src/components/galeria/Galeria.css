@@ -5,6 +5,9 @@
     --amarelo-b: rgba(255, 222, 89, 0.7);
     --azul: #199ef6;
 }
+div.caixa-espaço{
+    height: 15vh;
+}
 body{
     background-color: var(--cinza);
 }

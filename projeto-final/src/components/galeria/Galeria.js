@@ -44,6 +44,7 @@ export default function Galeria({setDados}) {
     return (
         <>
             <Header/>
+            <div className="caixa-espaço"></div>
             <div className="caixa-p">
                 <article className="guia">
                     <h3>Escolha o gatinho que você quer adotar!!!</h3>
@@ -53,6 +54,7 @@ export default function Galeria({setDados}) {
                     {imagensLista}
                 </div>
             </div>
+            <div className="caixa-espaço"></div>
             <Footer/>
         </>
     );
