@@ -7,7 +7,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: white;
+    background-color: #FBFDFD;
     position: absolute;
     z-index: 1;
 }
