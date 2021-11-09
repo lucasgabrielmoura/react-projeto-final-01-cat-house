@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0%;
+}
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(img/gato2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    background-color: rgba(3, 3, 3, 0.322);
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+
+}
+
+input {
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+label {
+    font-size: 16px;
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus {
+    outline: none;
+    color: #fff;
+}
+
+input:focus~label, 
+input:valid~label{
+    top: -14px;
+    font-size:  14px;
+    color: #00ffff;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700px;
+    color: #fff;
+}
+
+.form2 {
+    width: 100%;
+    margin: auto;
+}
+
+button {
+    border: none;
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    cursor: pointer; 
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgba(0,255,211,1) 0%, rgba(17,129,148,1) 24%, rgba(0,255,211,1) 50%, rgba(31,117,184,1) 70%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+input {
+    outline: none;
+}
