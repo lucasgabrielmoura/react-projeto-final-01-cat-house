@@ -23,6 +23,7 @@ img.flecha-guia{
     width: 3vw;
     animation: infinite desce-sobe 1s;
     position: absolute;
+    z-index: 1;
 }
 @keyframes desce-sobe {
     0%{
@@ -74,6 +75,7 @@ div.caixa-img:hover .caixinha{
 .caixinha{
     background-color: var(--amarelo-b);
     position: relative;
+    z-index: 2;
     opacity: 0;
     transition: 0.5s;
     width: 100%;

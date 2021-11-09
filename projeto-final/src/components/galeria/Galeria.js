@@ -4,7 +4,6 @@ import Imageapi from '../../services/Imageapi';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import arrow from './img/arrow-down.svg';
-import Sobre from "../sobre/Sobre";
 import {Link} from 'react-router-dom';
 
 /*https://api.thecatapi.com/v1/images/search?format=json&limit=25*/
@@ -30,6 +29,9 @@ export default function Galeria({setDados}) {
 
             })
             .catch((err) => console.error("ops! ocorreu um erro" + err))
+    }, [])
+    useEffect(() => {
+        document.title = "Galeria"
     }, [])
 
     const imagensLista = imagens.map(imagem => (

@@ -8,6 +8,7 @@ body{
     background-color: #199ef6;
     position: fixed;
     bottom: 0;
+    z-index: 1;
 }
 
 #rodape p {

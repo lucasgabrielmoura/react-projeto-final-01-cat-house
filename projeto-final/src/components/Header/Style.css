@@ -1,6 +1,7 @@
 .ul-logo {
     margin: 0;
     text-align: center;
+    padding: 0;
 }
 
 #header {
@@ -10,6 +11,7 @@
     z-index: 1;
     height: 12vh;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.616);
+    z-index: 2;
 }
 
 .logo {

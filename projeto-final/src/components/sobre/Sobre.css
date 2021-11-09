@@ -7,19 +7,25 @@
 .tela-principal{
     position: absolute;
     width: 100%;
-    z-index: 1;
-    opacity: 0.5;
+    z-index: 2;
+    opacity: 1;
     transition: 1s;
+    visibility: visible;
+    transform: scale(1);
 }
 .tela-principal.hide{
     transition: 1s;
-    opacity: 1;
+    transform: scale(1);
+    opacity: 0;
+    visibility: hidden;
 }
 .tela-sobre::-webkit-scrollbar {
     display: none;
 }
 .tela-sobre{
     width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.5);
 }
 .sobre{
     height: 96vh;
@@ -32,8 +38,8 @@
 }
 section.perfil-id{
     margin: 1vw 2vw;
-    width: 20vw;
-    height: 80vh;
+    width: 270px;
+    height: 500px;
     background-color: var(--blue);
     color: rgb(255, 255, 255);
     border-radius: 10px;
