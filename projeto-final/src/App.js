@@ -3,6 +3,7 @@ import Galeria from "./components/galeria/Galeria";
 import {Switch, Route} from 'react-router-dom'
 import Sobre from "./components/sobre/Sobre";
 import Home from "./components/Home/Home";
+import certificado from "./components/Certificado/Certificado";
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
           <Switch>
               <Route path="/" component={Home} exact/>
               <Route path="/Galeria" render={(props) => <Galeria setDados={setDados}/>} exact/>
+              <Route path="/Certificado" component={certificado} exact/>
           </Switch>
         </>
   );
