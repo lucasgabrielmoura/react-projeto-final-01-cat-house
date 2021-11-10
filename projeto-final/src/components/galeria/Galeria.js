@@ -11,12 +11,7 @@ import {Link} from 'react-router-dom';
 
 export default function Galeria({setDados}) {
 
-    const [imagens, setImagem] = useState([]);
-
-    function loading(){
-        document.getElementById("url-image").getAttribute("src",{bota});
-    };
-    console.log(document.getElementById("url-image").value)
+    const [imagens, setImagem] = useState([])
     function puxarDado(imagem){
       setDados({
           url:imagem
@@ -40,7 +35,7 @@ export default function Galeria({setDados}) {
 
     const imagensLista = imagens.map(imagem => (
     <div key={imagem.id} className="caixa-img">
-        <img id="url-image" onLoad={loading} className="cat" alt="gato" src={imagem.url} />
+        <img id="url-image" className="cat" alt="gato" src={imagem.url} />
         <div className="caixinha" id="caixinha-puxar">
             <button onClick={() => puxarDado(imagem.url)} className="botao-escolher">ADOTAR</button>
         </div>
