@@ -45,6 +45,8 @@ img.icons{
 }
 p.skill{
     margin: 0.4em 1em;
+    transition: 0.5s;
+    color: #199ef6;
 }
 section.perfil-id{
     margin: 2vw 2vw;
@@ -57,7 +59,12 @@ section.perfil-id{
 }
 
 .perfil-id a{
+    text-decoration: none;
     color: var(--amarelo);
+    transition: 0.5s;
+}
+p.skill:hover a{
+    color: #199ef6;
 }
 article.img-box{
     display: flex;
@@ -105,6 +112,8 @@ div.caixa-icons{
     animation-timing-function: ease-in-out;
     box-shadow: 0 0 50px 20px #199ef6b7;
 }
+
+
 
 @keyframes botao {
     0% {

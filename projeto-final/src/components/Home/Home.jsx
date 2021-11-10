@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Stylehome.css";
+import {Link} from 'react-router-dom';
 import Gato from "../Home/Img/gatinho.png";
 import Gato2 from "../Home/Img/Gato2.png";
 import Gato3 from "../Home/Img/Gato3.png";
@@ -28,7 +29,7 @@ export default function Home() {
                         <p>Testando 123, testando 123, testando 123 Testando 123, testando 123, testando 123 Testando 123, testando 123, testando 123 Testando 123, testando 123, testando 123 Testando 123, testando 123, testando 123Testando 123, testando 123, testando 123 Testando 123, testando 123, testando 123 Testando 123, testando 123, testando 123 Testando 123, testando 123, testando 123 Testando 123, testando 123, testando 123</p>
                         <div id="botoes">
                             <button onClick={sendWord} className="btn2">SAIBA MAIS</button>
-                            <button className="btn1">GALERIA</button>
+                            <Link to="/Galeria"><button className="btn1">GALERIA</button></Link>
                         </div>
                     </div>
                 </div>
