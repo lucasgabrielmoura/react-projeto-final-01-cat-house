@@ -1,31 +1,41 @@
-* {
-    padding: 0;
-    margin: 0%;
-}
 body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: url(img/gato2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+	background: linear-gradient(-45deg, #ffde59, #199ef6, #ffde59, #199ef6);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 
-form {
-    background-color: rgba(3, 3, 3, 0.322);
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.form {
+    background-color: rgba(3, 3, 3, 0.596);
     padding: 40px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%)
 }
 
-form .grupo {
+.form .grupo {
     position: relative;
-    margin: 45px;
+    margin: 40px;
 
 }
 
-input {
+.input {
     background: none;
     color: #fff;
     font-size: 18px;
@@ -36,7 +46,7 @@ input {
     border-bottom: 1px solid;
 }
 
-label {
+.label {
     font-size: 16px;
     position: absolute;
     color: #fff;
@@ -47,16 +57,16 @@ label {
     pointer-events: none;
 }
 
-input:focus {
+.input:focus {
     outline: none;
     color: #fff;
 }
 
-input:focus~label, 
-input:valid~label{
+.input:focus~.label, 
+.input:valid~.label{
     top: -14px;
     font-size:  14px;
-    color: #00ffff;
+    color: #199ef6;
 }
 
 .title {
@@ -70,16 +80,16 @@ input:valid~label{
     margin: auto;
 }
 
-button {
+.button {
     border: none;
     display: block;
     margin: 10px auto;
     width: 50%;
     cursor: pointer; 
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 5px;
-    background: linear-gradient(45deg, rgba(0,255,211,1) 0%, rgba(17,129,148,1) 24%, rgba(0,255,211,1) 50%, rgba(31,117,184,1) 70%);
+    background: linear-gradient(45deg, #199ef6 15%, #ffde59 24%, #ffde59 75%, #199ef6 80%);
 }
 
 
