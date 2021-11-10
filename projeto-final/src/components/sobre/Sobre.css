@@ -46,6 +46,7 @@ img.icons{
 p.skill{
     margin: 0.4em 1em;
     transition: 0.5s;
+    color: #199ef6;
 }
 section.perfil-id{
     margin: 2vw 2vw;
@@ -62,17 +63,9 @@ section.perfil-id{
     color: var(--amarelo);
     transition: 0.5s;
 }
-
-.skill a:hover {
-    color: black;
-    
+p.skill:hover a{
+    color: #199ef6;
 }
-
-.skill:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
 article.img-box{
     display: flex;
     justify-content: center;
