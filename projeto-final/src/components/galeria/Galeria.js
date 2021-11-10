@@ -36,7 +36,7 @@ export default function Galeria({setDados}) {
 
     const imagensLista = imagens.map(imagem => (
     <div key={imagem.id} className="caixa-img">
-        <img id="url-image" className="gato" alt="gato" src={imagem.url} />
+        <img id="url-image" className="cat" alt="gato" src={imagem.url} />
         <div className="caixinha" id="caixinha-puxar">
             <button onClick={() => puxarDado(imagem.url)} className="botao-escolher">ADOTAR</button>
         </div>
@@ -46,17 +46,19 @@ export default function Galeria({setDados}) {
     return (
         <>
             <Header/>
-            <div className="caixa-espaço"></div>
-            <div className="caixa-p">
-                <article className="guia">
-                    <h3>Escolha o gatinho que você quer adotar!!!</h3>
-                    <img className="flecha-guia" src={arrow} alt="flecha-circular-baixo" />
-                </article>
-                <div className="images">
-                    {imagensLista}
+            <div className="caixa-completa">
+                <div className="caixa-espaço"></div>
+                <div className="caixa-p">
+                    <article className="guia">
+                        <h3>Escolha o gatinho que você quer adotar!!!</h3>
+                        <img className="flecha-guia" src={arrow} alt="flecha-circular-baixo" />
+                    </article>
+                    <div className="images">
+                        {imagensLista}
+                    </div>
                 </div>
+                <div className="caixa-espaço"></div>
             </div>
-            <div className="caixa-espaço"></div>
             <Footer/>
         </>
     );

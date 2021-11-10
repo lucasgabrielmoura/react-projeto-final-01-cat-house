@@ -64,7 +64,8 @@ section.perfil-id{
     transition: 0.5s;
 }
 p.skill:hover a{
-    color: #199ef6;
+    color: black;
+    transform: scale(2);
 }
 article.img-box{
     display: flex;
