@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Stylehome.css";
 import {Link} from 'react-router-dom';
-import Gato from "../Home/Img/gatinho.png";
-import Gato2 from "../Home/Img/Gato2.png";
-import Gato3 from "../Home/Img/Gato3.png";
-import Gato4 from "../Home/Img/Gato4.png";
-import Gato5 from "../Home/Img/Gato5.png";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Sobre from "../sobre/Sobre";
+import { Carousel } from 'react-carousel-minimal';
 
 
+
+const data = [
+    {
+      image: "https://raw.githubusercontent.com/henriferi/imgs/main/gatinho.png",
+    },
+    {
+      image: "https://raw.githubusercontent.com/henriferi/imgs/main/Gato2.png",
+    },
+    {
+      image: "https://raw.githubusercontent.com/henriferi/imgs/main/Gato4.png",
+    },
+  ];
 
 
 export default function Home() {
@@ -18,6 +26,10 @@ export default function Home() {
     function sendWord(){
         setPalavra('tela-principal')
     }
+
+    useEffect(() => {
+        document.title = "Home"
+    })
 
     return(
         <>
@@ -34,7 +46,34 @@ export default function Home() {
                     </div>
                 </div>
                 <div id="imagem">
-                
+                <div className="App">
+      <div style={{ textAlign: "center" }}>
+        <div style={{
+        }}>
+          <Carousel
+            data={data}
+            time={3800}
+            width="500px"
+            height="450px"
+            radius="10px"
+            slideNumber={false}
+            automatic={true}
+            dots={true}
+            pauseIconColor="black"
+            pauseIconSize="40px"
+            slideBackgroundColor="white"
+            slideImageFit="cover"
+            thumbnails={false}
+            thumbnailWidth="100px"
+            style={{
+              maxWidth: "1000px",
+              maxHeight: "1500px",
+              margin: "40px auto",
+            }}
+          />
+        </div>
+      </div>
+    </div>
                 </div>
             </div>
             <Sobre palavra={palavra} setPalavra={setPalavra}/>

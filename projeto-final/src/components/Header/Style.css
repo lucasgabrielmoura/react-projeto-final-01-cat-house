@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+.botaoHome {
+    background: none;
+    border: none;
+    width: 8vw;
+    height: 15vh;
+}
+
 #header {
     width: 100%;
     position: fixed;

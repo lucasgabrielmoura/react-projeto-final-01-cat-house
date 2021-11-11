@@ -7,6 +7,7 @@ import Cadastro from "./components/cadastro/Cadastro"
 import certificado from "./components/Certificado/Certificado";
 
 
+
 export default function App() {
   const [dados, setDados] = useState({
     url:"",

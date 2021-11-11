@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 *{
     font-family: 'Open Sans', sans-serif;
 }
+
+
+
+
 #container {
     width: 100vw;
     height: 100vh;
@@ -13,12 +18,12 @@
 }
 
 #conteudo {
-    padding: 3.5em 2em;
+    padding: 3.5em 3em;
     width: 50%;
 }
 
 #imagem {
-    padding: 1.5em 3em;
+    padding: 4em 6em;
     width: 50%;
 }
 
@@ -93,9 +98,20 @@ span {
     transition: all 0.5s;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 375px) and (max-width: 414px) {
+    #texto {
+        height: 70vh;
+    }
+    #texto p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
    
    #conteudo {
+       height: 65vh;
+       width: 60%;
        padding: 0 1em;
    }
 
@@ -113,40 +129,53 @@ span {
     #texto h1{
         line-height: 2.5rem;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #botoes {
-        width: 85vw;
+        width: 100%;
     }
 
     .btn1 {
-        padding: 10px;
         width: 30vw;
+        padding: 10px;
     }
 
     .btn2 {
-        padding: 10px;
         width: 30vw;
+        padding: 10px;     
     }
     
 }
+
 @media (min-width: 750px) and (max-width: 2560px) and (min-height: 1024px) {
+
+    #container {
+        overflow: hidden;
+    }
     #conteudo {
         padding: 15em 3em;
     }
     #texto {
-        font-size: 23px;
+        width: 100%;
+        font-size: 30px;
+    }
+    #texto h1 {
+        font-size: 60px;
+        line-height: 4rem;
     }
     #botoes {
-        margin: 60px 0;
+        width: 100%;
     }
 
     .btn1 {
-        width: 13vw;
+        width: 25vw;
     }
     .btn2 {
-        width: 13vw;
+        width: 25vw;
+    }
+    #imagem {
+        padding: 20em 10em;
     }
 }
 
@@ -157,5 +186,8 @@ span {
     #texto h1 {
         line-height: 6rem;
         font-size: 100px;
+    }
+    #imagem {
+        padding: 32em;
     }
 }
