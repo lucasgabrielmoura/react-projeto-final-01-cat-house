@@ -38,7 +38,7 @@ function Cadastro (){
                     </div>
 
                     <div>
-                        <button onClick={mudarModal} className="button" type="submit">Enviar</button>
+                        <button className="button" type="submit">Enviar</button>
                     </div>
                     <div>
                         <button className="button" type="reset">Cancelar</button>
