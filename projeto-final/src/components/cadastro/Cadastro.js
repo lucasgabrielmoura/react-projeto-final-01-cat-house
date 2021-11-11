@@ -3,7 +3,7 @@ import "./Cadastro.css";
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Modal from "../modal/Modal";
-
+import "./Validacao"
 
 
 function Cadastro (){
@@ -18,23 +18,23 @@ function Cadastro (){
         <section className="section">
             <Header/>
             <Footer/>
-            <form className="form">
+            <form className="form" id="formulario">
                 <div className="form2">
                     <div>
                         <h1 className="title">Registro</h1>
                     </div>
 
                     <div className="grupo">
-                        <input className="input" type="text" required />
+                        <input className="input" type="text" id="nome" required />
                         <label className="label">Nome</label>
                     </div>
                     <div className="grupo">
-                        <input className="input" type="email" required />
+                        <input className="input" type="email" id="email" required />
                         <label className="label">Email</label>
                     </div>
                     <div className="grupo">
-                        <input className="input" type="password" required />
-                        <label className="label">Senha</label>
+                        <input className="input" type="number" id="numero" required />
+                        <label className="label">Telefone</label>
                     </div>
 
                     <div>
