@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Galeria from "./components/galeria/Galeria";
 import {Switch, Route} from 'react-router-dom'
-import Sobre from "./components/sobre/Sobre";
 import Home from "./components/Home/Home";
 import Cadastro from "./components/cadastro/Cadastro"
 import certificado from "./components/Certificado/Certificado";

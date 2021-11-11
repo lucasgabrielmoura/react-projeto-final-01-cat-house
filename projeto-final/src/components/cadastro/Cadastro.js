@@ -1,8 +1,8 @@
 import React from "react";
 import "./Cadastro.css";
-import ReactDOM from 'react-dom';
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import Modal from "../modal/Modal";
 
 
 
@@ -38,6 +38,7 @@ function Cadastro (){
                     </div>
                 </div>
             </form>
+            <Modal/>
         </section>
     )
 }

@@ -1,0 +1,20 @@
+:root{
+    --white: #FBFDFD;
+    --azul: #199ef6;
+}
+
+.caixa-p-modal{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa-i-modal{
+    width: 400px;
+    height: 200px;
+    background-color: var(--white);
+}
