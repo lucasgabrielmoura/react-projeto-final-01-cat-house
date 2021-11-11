@@ -186,7 +186,7 @@ button.botao-escolher:hover{
         height: 60vh;
     }
     div.caixa-img:hover{
-        transform: scale(1.05);
+        transform: scale(1.01);
     }
     div.caixa-img:hover .caixinha{
         transform: translateY(-30vw);;

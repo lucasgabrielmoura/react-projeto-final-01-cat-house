@@ -53,7 +53,7 @@ export default function Sobre(props){
                                             <img className="icons" src={github} alt="email-icon" />
                                         </div>
                                         <div className="caixa-redes">
-                                            <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
+                                            <p className="skill"><a href="mailto:henriquefernandes.gouveia@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
                                             <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Linkedin</a></p>
                                             <p className="skill"><a href="https://github.com/henriferi" target="_blank" rel="noreferrer">Github</a></p>
                                         </div>
@@ -76,7 +76,7 @@ export default function Sobre(props){
                                             <img className="icons" src={github} alt="email-icon" />
                                         </div>
                                         <div className="caixa-redes">
-                                            <p className="skill"><a href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noreferrer">Email</a></p>
+                                            <p className="skill"><a href="mailto:andersonviniciusfigueiredo.2021@gmail.com" target="_blank" rel="noreferrer">Email</a></p>
                                             <p className="skill"><a href="https://www.linkedin.com/in/anderson-figueiredo-8bb034218/" target="_blank" rel="noreferrer">Linkedin</a></p>
                                             <p className="skill"><a href="https://github.com/AndyVF" target="_blank" rel="noreferrer">Github</a></p>
                                         </div>

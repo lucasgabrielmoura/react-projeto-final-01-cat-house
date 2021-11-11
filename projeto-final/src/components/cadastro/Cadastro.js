@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cadastro.css";
-import ReactDOM from 'react-dom';
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import Modal from "../modal/Modal";
 
 
 
 function Cadastro (){
+
+    const [classModal, setClassModal] = useState("caixa-p-modal-hide")
+
+    function mudarModal(){
+        setClassModal("caixa-p-modal")
+    }
+
     return(
         <section className="section">
             <Header/>
@@ -31,13 +38,14 @@ function Cadastro (){
                     </div>
 
                     <div>
-                        <button className="button" type="submit">Enviar</button>
+                        <button onClick={mudarModal} className="button" type="submit">Enviar</button>
                     </div>
                     <div>
                         <button className="button" type="reset">Cancelar</button>
                     </div>
                 </div>
             </form>
+            <Modal classToModal = {classModal} setClassToModal={setClassModal}/>
         </section>
     )
 }
