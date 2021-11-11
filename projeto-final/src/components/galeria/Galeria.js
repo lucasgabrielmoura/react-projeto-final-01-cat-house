@@ -4,7 +4,6 @@ import Imageapi from '../../services/Imageapi';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import arrow from './img/arrow-down.svg';
-import bota from './img/4.png';
 import {Link} from 'react-router-dom';
 import Load from "./img/load.png";
 
