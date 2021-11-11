@@ -10,7 +10,7 @@ export default function Header() {
         <>
             <header id ="header">
                 <ul className="ul-logo">
-                <Link to="/"><img className="logo" src={Logo} alt="Logo-CatHouse" /></Link>
+                    <Link to="/"><img className="logo" src={Logo} alt="Logo-CatHouse" /></Link>
                 </ul>
             </header>
         </>
