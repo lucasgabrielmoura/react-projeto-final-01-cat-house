@@ -9,11 +9,9 @@ export default function Header() {
     return (
         <>
             <header id ="header">
-                <Link to="/">
                 <ul className="ul-logo">
-                   <img className="logo" src={Logo} alt="Logo-CatHouse" />
+                <Link to="/"><img className="logo" src={Logo} alt="Logo-CatHouse" /></Link>
                 </ul>
-                </Link>
             </header>
         </>
     );
