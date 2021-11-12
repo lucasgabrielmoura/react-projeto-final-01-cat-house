@@ -28,11 +28,10 @@ export default function Galeria({setDados}) {
             .then((res) => {
                 console.log(res.data)
                 setImagem(res.data)
-                setLoad(true)
-
             })
             .catch((err) => console.error("ops! ocorreu um erro" + err))
     }
+
 
     useEffect(() => {
         loading()
@@ -40,6 +39,11 @@ export default function Galeria({setDados}) {
     useEffect(() => {
         document.title = "Galeria"
     }, [])
+    setTimeout(() => {
+        setLoad(true);
+    }, 1500);
+    
+    const loader = (<div className="caixa-loading"><img className="load" src={Load} alt="loading" /></div>)
 
     const imagensLista = imagens.map(imagem => (
     <div key={imagem.id} className="caixa-img">
@@ -53,6 +57,7 @@ export default function Galeria({setDados}) {
     return (
         <>
             <Header/>
+            {load ? (<div></div>) : loader}
             <div className="caixa-completa">
                 <div className="caixa-espaço"></div>
                 <div className="caixa-p">
@@ -61,7 +66,7 @@ export default function Galeria({setDados}) {
                         <img className="flecha-guia" src={arrow} alt="flecha-circular-baixo" />
                     </article>
                     <div className="images">
-                        {load === false ? (<img className="load" src={Load} alt="loading" />):(imagensLista)}
+                        {imagensLista}
                     </div>
                 </div>
                 <div className="caixa-espaço"></div>

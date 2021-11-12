@@ -4,6 +4,7 @@
     --amarelo: #ffde59;
     --amarelo-b: rgba(255, 222, 89, 0.7);
     --azul: #199ef6;
+    --white: rgba(251, 253, 253);
 }
 div.caixa-espaço{
     height: 18vh;
@@ -105,6 +106,16 @@ button.botao-escolher:hover{
     background-color: var(--azul);
     background-position: 100px;
     color: var(--white);
+}
+.caixa-loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    position: fixed;
+    z-index: 5;
 }
 
 .load {

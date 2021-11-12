@@ -19,7 +19,7 @@
     visibility: hidden;
 }
 .caixa-i-modal{
-    width: 400px;
+    width: 370px;
     height: 250px;
     background-color: var(--azul);
     border-radius: 5px;
@@ -53,10 +53,10 @@ button.botao-modal:hover{
     transform: scale(1.05);
     color: #000000;
 }
-@media (max-width: 330px){
+@media (max-width: 380px){
     .caixa-i-modal{
-        width: 400px;
-        height: 300px;
+        width: 250px;
+        height: 340px;
         background-color: var(--azul);
         border-radius: 5px;
     }
