@@ -48,6 +48,19 @@
     text-align: start;
 }
 
+.span-cat {
+    color: #ffde59;
+}
+.span-house {
+    color:#199ef6;
+}
+.saiba-mais {
+    color:#199ef6;
+}
+.clique-galeria {
+    color: #199ef6;
+}
+
 span {
     color: rgb(43, 43, 255);
 }
@@ -59,7 +72,7 @@ span {
 }
 
 .btn1 {
-    border-radius: 30px;
+    border-radius: 10px;
     font-weight: bold;
     box-shadow: 1px 1px 3px black;
     padding: 15px;
@@ -81,7 +94,7 @@ span {
     box-shadow: 1px 1px 3px black;
     width: 7vw;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
     transition: 0.5s;

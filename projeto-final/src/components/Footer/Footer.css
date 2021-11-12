@@ -17,6 +17,17 @@ body{
     color: white;
 }
 
+.link-footer {
+    color:#ffde59 ;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.link-footer:hover {
+    color: black;
+    transition: .5s;
+}
+
 @media (max-height: 400px) {
 
     #rodape {
