@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
 .container {
     background-image: url(https://4.bp.blogspot.com/-9yv1LgF1IUU/VuFczUMA4EI/AAAAAAAABF4/BraZ0cXfGp8/s1600/contoh%2Bsertifikat%2Bblue.jpg);
     background-repeat: no-repeat;
@@ -10,21 +11,20 @@
 }
 
 .teste {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     font-size: 1.2em;
     text-align: center; 
     color: rgba(0, 0, 0, 0.699); 
     opacity: 85%;
-    margin-top: 12px;
+    margin-top: 50px;
 }
 
 
 
-.gato {
-    width: 12px;
-    height: 12%;
-    opacity: 82%;
-    margin-top: 29px;
+.Miau {
+    width: 200px;
+    height: 70%;
+    opacity: 100%;
+    margin-top: 42px;
     background-attachment: fixed;
     
 }
@@ -34,17 +34,17 @@
     width: 26%;
     height: 12%;
     margin-left: 1007px;
-    margin-top: -500px;
+    margin-top: -250px;
     
 }
 
 .perfil{
     width: 15%;
-    height: 30vh;
-    margin-top: -200px;
+    height: 32vh;
+    margin-top: -250px;
     border-style:outset;
     border-color: rgba(243, 209, 55, 0.623);
-    margin-left: 170px;
+    margin-left: 150px;
     border-radius: 115% 115%;
 
     
@@ -59,4 +59,10 @@
     opacity: 82%;
     
 
+}
+
+.titulo {
+    margin-top: -105px;
+    font-family: 'EB Garamond', serif;
+    font-size: 2.2em;
 }
