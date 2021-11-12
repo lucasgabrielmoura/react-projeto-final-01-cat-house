@@ -9,10 +9,9 @@ export default function certificado(props) {
         <>
         <div className="container">
         <div className="garf">
-        <img className="Miau" src={gato} alt="garfield"/>
         </div>
         <div className="teste">
-        <h1>CERTIFICADO DE ADOÇÃO</h1>
+        <h1 className="titulo">CERTIFICADO DE ADOÇÃO</h1>
         </div>
         <div>
         <img className=" carimbo" src={CAT} alt="Cat"/>
