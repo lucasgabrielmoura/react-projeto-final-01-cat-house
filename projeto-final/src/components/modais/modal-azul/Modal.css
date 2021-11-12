@@ -45,13 +45,13 @@ button.botao-modal{
     height: 30px;
     border-radius: 5px;
     border: 0;
-    transition: 0.5s;
     cursor: pointer;
     color: #7e8f8f;
 }
 button.botao-modal:hover{
     transform: scale(1.05);
     color: #000000;
+    transition: 0.5s;
 }
 @media (max-width: 380px){
     .caixa-i-modal{
@@ -100,11 +100,9 @@ button.botao-modal:hover{
         border-radius: 5px;
         border: 0;
         font-size: 30px;
-        transition: 0.5s;
         cursor: pointer;
     }
     button.botao-modal:hover{
         transform: scale(1.05);
-    
     }
 }
