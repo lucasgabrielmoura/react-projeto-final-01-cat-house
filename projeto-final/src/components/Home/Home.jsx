@@ -30,7 +30,7 @@ export default function Home() {
   useEffect(() => {
     document.title = "Home"
   })
-
+  
   return (
     <>
       <Header />
@@ -38,7 +38,7 @@ export default function Home() {
         <div id="conteudo">
           <div id="texto">
             <h1>Cat <span>House</span></h1>
-            <p>Somos uma instituição sem fins lucrativos que resgata gatos em situação de vulnerabilidade e mantém em abrigo enquanto lutamos para conseguir um lar para os mesmos. Nós da <span className="span-cat">Cat</span><span className="span-house">House</span> somos apaixonados por gatinhos e temos convicção de que você também irá ama-lós. Para saber mais sobre os desenvolvedores clique abaixo no botão <span className="saiba-mais">Saiba mais</span> e para conhecer seu novo amigo clique no botão <span className="clique-galeria">Galeria</span>. </p>
+            <p>Somos uma instituição sem fins lucrativos que resgata gatos em situação de vulnerabilidade e mantém em abrigo enquanto lutamos para conseguir um lar para os mesmos. Nós da <span className="span-cat">Cat</span><span className="span-house">House</span> somos apaixonados por gatinhos e temos convicção de que você também irá ama-lós. Para conhecer seu novo amiguinho clique abaixo no botão <span className="clique-galeria">Galeria</span> e para conhecer mais sobre os fundadores e desenvolvedores clique abaixo no botão <span className="saiba-mais">Saiba mais</span>. </p>
             <div id="botoes">
               <button onClick={sendWord} className="btn2">SAIBA MAIS</button>
               <Link to="/Galeria"><button className="btn1">GALERIA</button></Link>

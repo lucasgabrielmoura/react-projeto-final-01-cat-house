@@ -12,6 +12,10 @@ export default function Certificado(props) {
         document.title = "Certificado"
     })
 
+    const codigoCertificado = (min, max) =>    
+        Math.floor(Math.random() * (min, max))
+    const numeros = codigoCertificado(3487578, 578975478)
+
     return(
 
         <>
@@ -20,12 +24,14 @@ export default function Certificado(props) {
         </div>
         <div className="teste">
         <h1 className="titulo">CERTIFICADO DE ADOÇÃO</h1>
+        <p>{numeros}</p>
         </div>
         <div>
         <img className=" carimbo" src={CAT} alt="Cat"/>
         </div>
         <div className="perfil1">
             <img className="perfil" src={teste} alt="teste"/>
+            
         </div>
         </div>
         </>
