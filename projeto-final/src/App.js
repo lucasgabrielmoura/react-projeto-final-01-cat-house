@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Galeria from "./components/galeria/Galeria";
 import {Switch, Route} from 'react-router-dom'
 import Home from "./components/Home/Home";

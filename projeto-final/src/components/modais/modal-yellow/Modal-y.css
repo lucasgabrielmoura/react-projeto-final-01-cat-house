@@ -1,0 +1,109 @@
+:root{
+    --white: #FBFDFD;
+    --azul: #199ef6;
+    --yellow: #e0b400;
+}
+
+.caixa-p-modal-y{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: var(--white);
+}
+.caixa-p-modal-hide-y{
+    visibility: hidden;
+    display: none;
+}
+.caixa-i-modal-y{
+    width: 370px;
+    height: 250px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+}
+.caixa-i-modal-y h4, .caixa-i-modal-y p, .caixa-i-modal-y button{
+    margin: 0 30px;
+}
+.caixa-i-modal-y h4, .caixa-i-modal-y button{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.caixa-title-modal-y{
+    width: 100%;
+    display: flex;
+    height: 65px;
+}
+.svg-modal-y{
+    height: 100%;
+    margin-top: 18px;
+}
+button.botao-modal-y{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: #7e8f8f;
+}
+button.botao-modal-y:hover{
+    transform: scale(1.03);
+    color: #000000;
+    transition: 0.5s;
+}
+@media (max-width: 380px){
+    .caixa-i-modal-y{
+        width: 250px;
+        height: 340px;
+    }
+}
+@media (min-width: 2000px) {
+    .caixa-i-modal-y{
+        width: 800px;
+        height: 400px;
+    }
+    .caixa-i-modal-y h4, .caixa-i-modal-y p, .caixa-i-modal-y button{
+        margin: 0 30px;
+    }
+    .caixa-i-modal-y h4{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .caixa-i-modal-y p{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .caixa-i-modal-y h4, .caixa-i-modal-y button,.caixa-i-modal-y p{
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+    .img-check{
+        width: 55px;
+    }
+    .caixa-title-modal-y{
+        width: 100%;
+        display: flex;
+        height: 65px;
+    }
+    .svg-modal-y{
+        height: 100%;
+        margin-top: 30px;
+    }
+    button.botao-modal-y{
+        width: 130px;
+        height: 50px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 30px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    button.botao-modal-y:hover{
+        transform: scale(1.05);
+    
+    }
+}

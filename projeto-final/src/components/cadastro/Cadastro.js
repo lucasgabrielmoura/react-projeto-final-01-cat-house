@@ -3,6 +3,7 @@ import "./Cadastro.css";
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Modal from "../modais/modal-vermelho/Modal-v";
+import ModalY from '../modais/modal-yellow/Modal-y'
 import {Link} from 'react-router-dom'
 
 function Cadastro(props) {
@@ -12,9 +13,13 @@ function Cadastro(props) {
     })
 
     const [classModal, setClassModal] = useState("caixa-p-modal-hide-v")
+    const [classModalY, setClassModalY] = useState("caixa-p-modal-hide-y")
 
     function mudarModal() {
         setClassModal("caixa-p-modal-v")
+    }
+    function mudarModalY() {
+        setClassModalY("caixa-p-modal-y")
     }
 
     const [rota, setRota] = useState('/cadastro')
@@ -79,10 +84,11 @@ function Cadastro(props) {
                         <Link className="link-decoration" to={rota}><button className="button" type="button" onClick={validador}>Continuar</button></Link>
                     </div>
                     <div>
-                        <button className="button" type="reset">Cancelar</button>
+                        <button onClick={mudarModalY} className="button" type="button">Cancelar</button>
                     </div>
                 </div>
             </form>
+            <ModalY classToModalY={classModalY} setClassToModalY={setClassModalY} />
             <Modal classToModal={classModal} setClassToModal={setClassModal} />
         </section>
     )
