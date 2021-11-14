@@ -19,7 +19,7 @@ export default function Certificado(props) {
     let nomeDoGato = window.localStorage.getItem('nomeDoGato');
     let nomeDoDono = window.localStorage.getItem('nomeDoDono');
     let dataGato = window.localStorage.getItem('dataGato');
-    let imagem = window.localStorage.getItem('imagem')
+    let imagem = window.localStorage.getItem('imagem');
 
     return(
 
