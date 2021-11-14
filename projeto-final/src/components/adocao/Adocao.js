@@ -43,7 +43,7 @@ function Adocao (props){
 
                     <div className="grupo">
                         <input className="input" type="text" id="nome-do-gato" autocomplete="off" required />
-                        <label className="label">Digite o nome para seu gato</label>
+                        <label className="label">Nome do gato</label>
                     </div>
                     <div className="grupo">
                         <label className="dataNome">Data de adoção</label>
