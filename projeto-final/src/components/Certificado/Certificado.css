@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap');
+
 .container {
     background-image: url(https://4.bp.blogspot.com/-9yv1LgF1IUU/VuFczUMA4EI/AAAAAAAABF4/BraZ0cXfGp8/s1600/contoh%2Bsertifikat%2Bblue.jpg);
     background-repeat: no-repeat;
@@ -68,11 +70,16 @@
 }
 
 .cert {
-    font-family: 'EB Garamond', serif;
-    margin-left: 8%;
+    font-family: 'Unna', serif;
+    margin-left: 5%;
     font-size: 1.6em;
     opacity: 65%;
 }
-.nomeDoGato {
-    font-weight: bolder;
+
+.codigoDeLocalizacao{
+display: flex;
+text-align: center;
+margin-top: 10%;
+justify-content: center;
+opacity: 65%;
 }

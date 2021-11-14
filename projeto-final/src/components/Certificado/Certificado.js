@@ -1,9 +1,9 @@
- import React, { useEffect } from "react"
- import gato from  "../Certificado/fotos/garfield.png"
- import "./Certificado.css"
- import CAT from "../Certificado/fotos/CAT.png"
+import React, { useEffect } from "react"
+import gato from "../Certificado/fotos/garfield.png"
+import "./Certificado.css"
+import CAT from "../Certificado/fotos/CAT.png"
 
- 
+
 
 export default function Certificado(props) {
 
@@ -11,7 +11,7 @@ export default function Certificado(props) {
         document.title = "Certificado"
     })
 
-    const codigoCertificado = (min, max) =>    
+    const codigoCertificado = (min, max) =>
         Math.floor(Math.random() * (min, max))
     const numeros = codigoCertificado(3487578, 578975478)
 
@@ -20,27 +20,29 @@ export default function Certificado(props) {
     let dataGato = window.localStorage.getItem('dataGato');
     let imagem = window.localStorage.getItem('imagem');
 
-    return(
+    return (
 
         <>
-        <div className="container">
-        <div className="garf">
-        </div>
-        <div className="teste">
-        <h1 className="titulo">CERTIFICADO DE ADOÇÃO</h1>
-        <p>{numeros}</p>
-        </div>
-        <div>
-        <img className=" carimbo" src={CAT} alt="Cat"/>
-        </div>
-        <div className="perfil1">
-            <img className="perfil" src={imagem} alt="gatos"/>
-            
-        </div>
-        <div className="texto">
-            <p className="cert">Eu {nomeDoDono} estou adotando esse gato com o nome de {nomeDoGato} na data {dataGato} me responsabilizando toltamente pela sua criação.</p>
-        </div>
-        </div>
+            <div className="container">
+                <div className="garf">
+                </div>
+                <div className="teste">
+                    <h1 className="titulo">CERTIFICADO DE ADOÇÃO</h1>
+                </div>
+                <div>
+                    <img className=" carimbo" src={CAT} alt="Cat" />
+                </div>
+                <div className="perfil1">
+                    <img className="perfil" src={imagem} alt="gatos" />
+
+                </div>
+                <div className="texto">
+                    <p className="cert">Eu {nomeDoDono} estou adotando esse gato com o nome de {nomeDoGato} na data {dataGato} me responsabilizando toltamente pela sua criação.</p>
+                </div>
+                <div className="codigoDeLocalizacao">
+                    <p className="number">Código de Localização: {numeros}</p>
+                </div>
+            </div>
         </>
     )
 }
