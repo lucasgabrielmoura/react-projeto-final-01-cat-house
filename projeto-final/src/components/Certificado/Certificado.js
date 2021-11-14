@@ -2,7 +2,6 @@
  import gato from  "../Certificado/fotos/garfield.png"
  import "./Certificado.css"
  import CAT from "../Certificado/fotos/CAT.png"
- import teste from "../Certificado/fotos/teste.jpg"
 
  
 
@@ -35,8 +34,12 @@ export default function Certificado(props) {
         <img className=" carimbo" src={CAT} alt="Cat"/>
         </div>
         <div className="perfil1">
-            <img className="perfil" src={teste} alt="teste"/>
+            <img className="perfil" src={imagem} alt="gatos"/>
             
+        </div>
+        <div className="texto">
+            <p className="cert">Eu {nomeDoDono} estou adotando esse gato com o nome de {nomeDoGato} na data {dataGato}
+            me responsabilizando toltamente pela sua criação.</p>
         </div>
         </div>
         </>
