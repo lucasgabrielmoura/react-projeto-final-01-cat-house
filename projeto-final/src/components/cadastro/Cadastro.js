@@ -3,37 +3,53 @@ import "./Cadastro.css";
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Modal from "../modais/modal-vermelho/Modal-v";
+import {Link} from 'react-router-dom'
 
-function Cadastro() {
+function Cadastro(props) {
 
     useEffect(() => {
         document.title = "Cadastro"
     })
 
-    const [classModal, setClassModal] = useState("caixa-p-modal-hide")
+    const [classModal, setClassModal] = useState("caixa-p-modal-hide-v")
 
     function mudarModal() {
-        setClassModal("caixa-p-modal")
+        setClassModal("caixa-p-modal-v")
     }
 
-    function validador() {
+    const [rota, setRota] = useState('/cadastro')
+
+    function validador(e) {
+        var nome = document.getElementById("nome").value
+        var email = document.getElementById("email").value
+        var telefone = document.getElementById("telefone").value
+        const reEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const reCharacter = /^[A-z]{3,10}$/;
+        
+        if (nome === "" || reCharacter.test(nome) === false || email === "" || reEmail.test(email) === false || telefone === "") {
+            mudarModal()
+        }else {
+            console.log()
+            window.localStorage.setItem('nomeDoDono', nome);
+        }
+
+    }
+
+    function mudarLink(){
         var nome = document.getElementById("nome").value
         var email = document.getElementById("email").value
         var telefone = document.getElementById("telefone").value
 
-        let testRegex = function () {
-            let regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
-            return regex.test(email);
-        }
+        const reEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const reCharacter = /^[A-z]{3,}$/;
 
-        if (nome == "" || email == "" || telefone == "") {
-            alert("Por favor verifique se todos os dados foram preechidos.");
-        } else if (testRegex() === true) {
-            alert("Registro Concluído");
-        } else {
-            alert("Email inválido");
-        }
 
+        if (nome === "" || reCharacter.test(nome) === false  || email === "" || reEmail.test(email) === false || telefone === "") {
+            console.log()
+            setRota("/cadastro")
+        }else {
+            setRota("/adocao")
+        }
     }
 
     return (
@@ -47,20 +63,20 @@ function Cadastro() {
                     </div>
 
                     <div className="grupo">
-                        <input className="input" type="text" id="nome" autocomplete="off" required />
+                        <input onChange={mudarLink}  className="input" type="text" id="nome" autocomplete="off" required />
                         <label className="label">Nome</label>
                     </div>
                     <div className="grupo">
-                        <input className="input" type="text" id="email" autocomplete="off" required />
+                        <input onChange={mudarLink} className="input" type="text" id="email" autocomplete="off" required />
                         <label className="label">Email</label>
                     </div>
                     <div className="grupo">
-                        <input className="input" type="number" id="telefone" required />
+                        <input onChange={mudarLink}  className="input" type="number" id="telefone" required />
                         <label className="label">Telefone</label>
                     </div>
 
                     <div>
-                        <button className="button" type="submit" onClick={validador}>Continuar</button>
+                        <Link className="link-decoration" to={rota}><button className="button" type="button" onClick={validador}>Continuar</button></Link>
                     </div>
                     <div>
                         <button className="button" type="reset">Cancelar</button>

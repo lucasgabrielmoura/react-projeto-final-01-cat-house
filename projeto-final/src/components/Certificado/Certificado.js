@@ -16,6 +16,11 @@ export default function Certificado(props) {
         Math.floor(Math.random() * (min, max))
     const numeros = codigoCertificado(3487578, 578975478)
 
+    let nomeDoGato = window.localStorage.getItem('nomeDoGato');
+    let nomeDoDono = window.localStorage.getItem('nomeDoDono');
+    let dataGato = window.localStorage.getItem('dataGato');
+    let imagem = window.localStorage.getItem('imagem')
+
     return(
 
         <>

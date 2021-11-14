@@ -9,7 +9,7 @@ import Load from "./img/load.png";
 
 /*https://api.thecatapi.com/v1/images/search?format=json&limit=25*/
 
-export default function Galeria({setDados}) {
+export default function Galeria({mudarDados}) {
 
 
     const [load, setLoad] = useState(false)
@@ -17,10 +17,7 @@ export default function Galeria({setDados}) {
 
     const [imagens, setImagem] = useState([])
     function puxarDado(imagem){
-      setDados({
-          url:imagem
-      })  
-      console.log(imagem)
+        window.localStorage.setItem('imagem', imagem);
     }
     function loading(){
         Imageapi

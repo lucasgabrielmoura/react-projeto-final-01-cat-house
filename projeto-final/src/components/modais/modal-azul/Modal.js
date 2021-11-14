@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 
 export default function Modal(props){
     function setandoModal(){
-        props.setClassToModal("caixa-p-modal-hide")
+        props.setClassToModal("caixa-p-modal-hide-a")
     }
 
     return(
         <>
             <div className={props.classToModal}>
-                <div className="caixa-i-modal">
-                    <div className="caixa-title-modal">
+                <div className="caixa-i-modal-a">
+                    <div className="caixa-title-modal-a">
                         <h4>Tudo pronto!</h4>
-                        <div className="svg-modal">
-                            <img className="img-check" src={check} alt="check-img"/>
+                        <div className="svg-modal-a">
+                            <img className="img-check-a" src={check} alt="check-img"/>
                         </div>
                     </div>
                     <p>
@@ -23,7 +23,7 @@ export default function Modal(props){
                         Este é o endereço onde ele te espera (Avenida dos Gatos, 333).
                         Clique em OK, para adquirir o certificado de adoção do seu gatinho!
                     </p>
-                    <Link to="/certificado"><button onClick={setandoModal} className="botao-modal">OK</button></Link>
+                    <Link to="/certificado"><button onClick={setandoModal} className="botao-modal-a">OK</button></Link>
                 </div>
             </div>
         </>

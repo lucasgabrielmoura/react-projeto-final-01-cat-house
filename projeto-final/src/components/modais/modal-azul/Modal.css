@@ -3,7 +3,7 @@
     --azul: #199ef6;
 }
 
-.caixa-p-modal{
+.caixa-p-modal-a{
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0,0.6);
@@ -15,32 +15,33 @@
     justify-content: center;
     color: var(--white);
 }
-.caixa-p-modal-hide{
+.caixa-p-modal-hide-a{
     visibility: hidden;
+    display: none;
 }
-.caixa-i-modal{
+.caixa-i-modal-a{
     width: 370px;
     height: 250px;
     background-color: var(--azul);
     border-radius: 5px;
 }
-.caixa-i-modal h4, .caixa-i-modal p, .caixa-i-modal button{
+.caixa-i-modal-a h4, .caixa-i-modal-a p, .caixa-i-modal-a button{
     margin: 0 30px;
 }
-.caixa-i-modal h4, .caixa-i-modal button{
+.caixa-i-modal-a h4, .caixa-i-modal-a button{
     margin-top: 20px;
     margin-right: 10px;
 }
-.caixa-title-modal{
+.caixa-title-modal-a{
     width: 100%;
     display: flex;
     height: 65px;
 }
-.svg-modal{
+.svg-modal-a{
     height: 100%;
     margin-top: 18px;
 }
-button.botao-modal{
+button.botao-modal-a{
     width: 70px;
     height: 30px;
     border-radius: 5px;
@@ -48,13 +49,13 @@ button.botao-modal{
     cursor: pointer;
     color: #7e8f8f;
 }
-button.botao-modal:hover{
+button.botao-modal-a:hover{
     transform: scale(1.05);
     color: #000000;
     transition: 0.5s;
 }
 @media (max-width: 380px){
-    .caixa-i-modal{
+    .caixa-i-modal-a{
         width: 250px;
         height: 340px;
         background-color: var(--azul);
@@ -62,39 +63,39 @@ button.botao-modal:hover{
     }
 }
 @media (min-width: 2000px) {
-    .caixa-i-modal{
+    .caixa-i-modal-a{
         width: 800px;
         height: 400px;
         background-color: var(--azul);
     }
-    .caixa-i-modal h4, .caixa-i-modal p, .caixa-i-modal button{
+    .caixa-i-modal-a h4, .caixa-i-modal-a p, .caixa-i-modal-a button{
         margin: 0 30px;
     }
-    .caixa-i-modal h4{
+    .caixa-i-modal-a h4{
         font-size: 40px;
         margin-bottom: 20px;
     }
-    .caixa-i-modal p{
+    .caixa-i-modal-a p{
         font-size: 30px;
         margin-bottom: 20px;
     }
-    .caixa-i-modal h4, .caixa-i-modal button,.caixa-i-modal p{
+    .caixa-i-modal-a h4, .caixa-i-modal-a button,.caixa-i-modal-a p{
         margin-top: 30px;
         margin-right: 10px;
     }
     .img-check{
         width: 55px;
     }
-    .caixa-title-modal{
+    .caixa-title-modal-a{
         width: 100%;
         display: flex;
         height: 65px;
     }
-    .svg-modal{
+    .svg-modal-a{
         height: 100%;
         margin-top: 30px;
     }
-    button.botao-modal{
+    button.botao-modal-a{
         width: 130px;
         height: 50px;
         border-radius: 5px;
@@ -102,7 +103,7 @@ button.botao-modal:hover{
         font-size: 30px;
         cursor: pointer;
     }
-    button.botao-modal:hover{
+    button.botao-modal-a:hover{
         transform: scale(1.05);
     }
 }
