@@ -38,8 +38,7 @@ export default function Certificado(props) {
             
         </div>
         <div className="texto">
-            <p className="cert">Eu {nomeDoDono} estou adotando esse gato com o nome de {nomeDoGato} na data {dataGato}
-            me responsabilizando toltamente pela sua criação.</p>
+            <p className="cert">Eu {nomeDoDono} estou adotando esse gato com o nome de {nomeDoGato} na data {dataGato} me responsabilizando toltamente pela sua criação.</p>
         </div>
         </div>
         </>

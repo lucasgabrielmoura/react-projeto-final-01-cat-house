@@ -68,6 +68,11 @@
 }
 
 .cert {
-    
-    margin-left: 20%;
+    font-family: 'EB Garamond', serif;
+    margin-left: 8%;
+    font-size: 1.6em;
+    opacity: 65%;
+}
+.nomeDoGato {
+    font-weight: bolder;
 }
