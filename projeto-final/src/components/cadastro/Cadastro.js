@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Cadastro.css";
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import Modal from "../modal/Modal";
+import Modal from "../modais/modal-vermelho/Modal-v";
 
 function Cadastro() {
+
+    useEffect(() => {
+        document.title = "Cadastro"
+    })
 
     const [classModal, setClassModal] = useState("caixa-p-modal-hide")
 
