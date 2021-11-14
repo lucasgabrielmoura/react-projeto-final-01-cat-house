@@ -24,7 +24,7 @@ export default function Modal(props){
                         </div>
                     </div>
                     <p>
-                        Você está poucos passos para pegar seu bixinho, mas se quiser realmente cancelar sua adoção, 
+                        Você está a poucos passos para pegar seu bixinho, mas se quiser realmente cancelar sua adoção, 
                         clique em sim, caso queira seu animalzinho, clique em não.
                     </p>
                     <Link to='/'><button onClick={ficarCadastro} className="botao-modal-y">SIM</button></Link>
