@@ -1,5 +1,5 @@
 .section {
-        background: linear-gradient(-45deg, #ffde59, #199ef6, #ffde59, #199ef6);
+        
         background-size: 400% 400%;
         width: 100%;
         height: 100vh;
@@ -75,10 +75,15 @@
     margin: 10px auto;
     width: 50%;
     cursor: pointer; 
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #199ef6 15%, #ffde59 24%, #ffde59 75%, #199ef6 80%);
+    background-color: #199ef6;
+}
+
+.dataNome {
+    color: #fff;
+    font-size: 20px;
 }
 
 

@@ -3,21 +3,39 @@ import "./Cadastro.css";
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Modal from "../modal/Modal";
-import "./Validacao"
 
-
-function Cadastro (){
+function Cadastro() {
 
     const [classModal, setClassModal] = useState("caixa-p-modal-hide")
 
-    function mudarModal(){
+    function mudarModal() {
         setClassModal("caixa-p-modal")
     }
 
-    return(
+    function validador() {
+        var nome = document.getElementById("nome").value
+        var email = document.getElementById("email").value
+        var telefone = document.getElementById("telefone").value
+
+        let testRegex = function () {
+            let regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+            return regex.test(email);
+        }
+
+        if (nome == "" || email == "" || telefone == "") {
+            alert("Por favor verifique se todos os dados foram preechidos.");
+        } else if (testRegex() === true) {
+            alert("Registro Concluído");
+        } else {
+            alert("Email inválido");
+        }
+
+    }
+
+    return (
         <section className="section">
-            <Header/>
-            <Footer/>
+            <Header />
+            <Footer />
             <form className="form" id="formulario">
                 <div className="form2">
                     <div>
@@ -25,27 +43,27 @@ function Cadastro (){
                     </div>
 
                     <div className="grupo">
-                        <input className="input" type="text" id="nome" required />
+                        <input className="input" type="text" id="nome" autocomplete="off" required />
                         <label className="label">Nome</label>
                     </div>
                     <div className="grupo">
-                        <input className="input" type="email" id="email" required />
+                        <input className="input" type="text" id="email" autocomplete="off" required />
                         <label className="label">Email</label>
                     </div>
                     <div className="grupo">
-                        <input className="input" type="number" id="numero" required />
+                        <input className="input" type="number" id="telefone" required />
                         <label className="label">Telefone</label>
                     </div>
 
                     <div>
-                        <button className="button" type="submit">Enviar</button>
+                        <button className="button" type="submit" onClick={validador}>Continuar</button>
                     </div>
                     <div>
                         <button className="button" type="reset">Cancelar</button>
                     </div>
                 </div>
             </form>
-            <Modal classToModal = {classModal} setClassToModal={setClassModal}/>
+            <Modal classToModal={classModal} setClassToModal={setClassModal} />
         </section>
     )
 }
