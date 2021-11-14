@@ -41,7 +41,7 @@ function Cadastro(props) {
         var telefone = document.getElementById("telefone").value
 
         const reEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        const reCharacter = /^[A-z]{3,}$/;
+        const reCharacter = /^[a-zA-Z\s\.]*$/;
 
 
         if (nome === "" || reCharacter.test(nome) === false  || email === "" || reEmail.test(email) === false || telefone === "") {
