@@ -31,7 +31,7 @@ function Adocao (props){
     }
     function validadorGato(){
         let nomeGato = document.getElementById("nome-do-gato").value
-        const reCharacter = /^[A-z]{3,}$/;
+        const reCharacter = /^[a-zA-Z\s\.]*$/;
         if(nomeGato === "" || reCharacter.test(nomeGato) === false){
             mudarModalV()
         }else{
