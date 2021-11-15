@@ -29,7 +29,7 @@ function Cadastro(props) {
         var email = document.getElementById("email").value
         var telefone = document.getElementById("telefone").value
         const reEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        const reCharacter = /^[a-zA-Z\s\.]*$/;
+        const reCharacter = /^([a-zA-Zà-úÀ-Ú]|-|_|\s)+$/;
         
         if (nome === "" || reCharacter.test(nome) === false || email === "" || reEmail.test(email) === false || telefone === "") {
             mudarModal()
@@ -46,7 +46,7 @@ function Cadastro(props) {
         var telefone = document.getElementById("telefone").value
 
         const reEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        const reCharacter = /^[a-zA-Z\s\.]*$/;
+        const reCharacter = /^([a-zA-Zà-úÀ-Ú]|-|_|\s)+$/;
 
 
         if (nome === "" || reCharacter.test(nome) === false  || email === "" || reEmail.test(email) === false || telefone === "") {
