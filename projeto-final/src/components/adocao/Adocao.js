@@ -13,7 +13,7 @@ function Adocao (props){
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today.getFullYear();
 
-    today = yyyy + '-' + mm + '-' + dd;
+    today = dd + '-' + mm + '-' + yyyy;
 
 
     const [classModalV, setClassModalV] = useState("caixa-p-modal-hide-v")
@@ -31,14 +31,13 @@ function Adocao (props){
     }
     function validadorGato(){
         let nomeGato = document.getElementById("nome-do-gato").value
-        let data = document.getElementById("data").value
         const reCharacter = /^[A-z]{3,}$/;
-        if(nomeGato === "" || reCharacter.test(nomeGato) === false || data === "" || data !== today){
+        if(nomeGato === "" || reCharacter.test(nomeGato) === false){
             mudarModalV()
         }else{
             mudarModalA()
             window.localStorage.setItem('nomeDoGato', nomeGato);
-            window.localStorage.setItem('dataGato', data);
+            window.localStorage.setItem('dataGato', today);
         }
     }
 
@@ -55,10 +54,6 @@ function Adocao (props){
                     <div className="grupo">
                         <input className="input" type="text" id="nome-do-gato" autocomplete="off" required />
                         <label className="label">Nome do gato</label>
-                    </div>
-                    <div className="grupo">
-                        <label className="dataNome">Data de adoção</label>
-                        <input className="input" type="date" id="data" required />
                     </div>
                     <div>
                         <button onClick={validadorGato} className="button" type="button">Finalizar</button>

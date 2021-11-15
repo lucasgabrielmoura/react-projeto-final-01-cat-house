@@ -81,7 +81,7 @@ function Cadastro(props) {
                     </div>
 
                     <div>
-                        <Link className="link-decoration" to={rota}><button className="button" type="button" onClick={validador}>Continuar</button></Link>
+                        <Link className="link-decoration" to={rota}><button className="button" type="submit" onClick={validador}>Continuar</button></Link>
                     </div>
                     <div>
                         <button onClick={mudarModalY} className="button" type="button">Cancelar</button>
