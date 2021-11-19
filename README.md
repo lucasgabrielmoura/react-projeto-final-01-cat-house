@@ -7,7 +7,7 @@
 <h2>
     😺 Sobre o projeto
 </h2>
-A CAT-HOUSE foi feita para criar um site simples e bem completo de adoção de gatos, tendo nenhum 
+A CAT-HOUSE foi feita como TCC para a START 2021 com o objetivo de criar um site simples e bem completo de adoção de gatos, tendo nenhum 
 empecilho ou problema para adotar, fazendo o caminho ser bem dinâmico e rápido.
 
 ## 😺 Ideia do Projeto
